@@ -16,7 +16,6 @@ public class App {
         System.out.println("------------------- Java 8 -------------------");
         FeaturesJava8 java8 = new FeaturesJava8();
         java8.listarNomesStream();
-//        java8.somarNumeros();
         System.out.println("----------------------------------------------");
     }
 

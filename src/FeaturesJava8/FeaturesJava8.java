@@ -17,14 +17,4 @@ public class FeaturesJava8 {
                 .forEach(System.out::println);
     }
 
-    public void somarNumeros() {
-        List<Integer> listOfIntegers =
-                new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8));
-        System.out.println("Resultado soma: " +
-                listOfIntegers
-                        .stream()
-                        .reduce(Integer::sum).get());
-
-    }
-
 }
