@@ -21,7 +21,7 @@ public class FeaturesJava11 {
     public void arquivos(String mensagem) {
         mensagem = mensagem.strip();
         try {
-            Files.writeString(Path.of("../../test.txt"), mensagem);
+            Files.writeString(Path.of("../test.txt"), mensagem);
         } catch (IOException e) {
             e.printStackTrace();
         }

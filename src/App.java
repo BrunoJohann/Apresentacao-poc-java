@@ -41,3 +41,4 @@ public class App {
         System.out.println("----------------------------------------------");
     }
 }
+//http://api-int.grupodimedservices.com.br/tst/pedido-service/v1/pedidos/10/itens
