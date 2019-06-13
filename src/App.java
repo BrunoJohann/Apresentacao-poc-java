@@ -23,6 +23,8 @@ public class App {
         System.out.println("------------------- Java 9 -------------------");
         FeaturesJava9 java9 = new FeaturesJava9();
         java9.listaOf();
+        System.out.println("======================");
+        java9.http();
         System.out.println("----------------------------------------------");
     }
 
@@ -37,6 +39,7 @@ public class App {
         System.out.println("------------------- Java 11 ------------------");
         var java11 = new FeaturesJava11();
         java11.calcular();
+        System.out.println("=======================");
         java11.arquivos("     Qualquer coisa    ");
         System.out.println("----------------------------------------------");
     }
