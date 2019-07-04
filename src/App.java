@@ -31,7 +31,7 @@ public class App {
     public static void java10() {
         System.out.println("------------------- Java 10 ------------------");
         var java10 = new FeaturesJava10();
-        java10.copiaListaImutavel();
+        java10.listaCopyOf();
         System.out.println("\n----------------------------------------------");
     }
 

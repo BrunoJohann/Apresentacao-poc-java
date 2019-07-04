@@ -17,4 +17,7 @@ public class FeaturesJava8 {
                 .forEach(System.out::println);
     }
 
+    //default
+    //Interface funcional
+
 }

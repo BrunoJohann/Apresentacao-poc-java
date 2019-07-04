@@ -4,23 +4,27 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FeaturesJava9 implements InterfaceJava9 {
 
+    //.of
     public void listaOf() {
-        List<String> nomes = this.pegarLista();
-        try {
-            nomes.add("Fulaninho");
-        } catch (Exception err) {
-            System.out.println(new Exception("Lista imutável não pode adicionar um novo elemento"));
+        ArrayList<String> nomes = this.pegarLista();
+        List<ArrayList<String>> listOf = List.of(nomes);
+        nomes.add("Jorge");
+        try{
+//            listOf.add("Teste");
+        }catch (Exception err){
+            System.out.println("Lista imutável não pode adicionar");
         }
-        try {
-            nomes.remove(1);
-        } catch (Exception err) {
-            System.out.println(new Exception("Lista imutável não pode excluir um elemento"));
+        try{
+            listOf.remove(2);
+        }catch (Exception err){
+            System.out.println("Lista imutável não pode remover");
         }
-        nomes.forEach(nome -> System.out.println(nome));
+        listOf.forEach(nome -> System.out.println(nome));
     }
 
     //Http
